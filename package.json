@@ -1,6 +1,6 @@
 {
-	"name": "mtnlibrary",
-	"version": "1.1.1",
+	"name": "vue-mtnlibrary",
+	"version": "1.1.2",
 	"description": "Mtn Library",
 	"license": "LGPLv3",
 	"repository": "israelinux/vue-mtnlibrary",
@@ -19,7 +19,8 @@
 	],
 	"keywords": [
 		"mtnlibrary",
-		"mtn-library"
+		"mtn-library",
+		"vue-mtnlibrary"
 	],
 	"devDependencies": {
 	

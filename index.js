@@ -77,7 +77,7 @@ const Mtn = {
 	  return nArr;
 	},
 	lambda: function(query) {
-	  if(process.)
+	  
 	  if (Mtn.isEmpty(query)) return new Function("return true;");
 	  if (query.indexOf("=>") < 0) return new Function(query);
   
