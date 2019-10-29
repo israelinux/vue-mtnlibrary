@@ -1,0 +1,27 @@
+{
+	"name": "mtnlibrary",
+	"version": "1.1.1",
+	"description": "Mtn Library",
+	"license": "LGPLv3",
+	"repository": "israelinux/mtnlibrary",
+	"author": {
+		"name": "Israel Fonseca",
+		"email": "israelinux@gmail.com",
+		"url": "https://www.mtn.com.br"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {	
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"mtnlibrary",
+		"mtn-library"
+	],
+	"devDependencies": {
+	
+	}
+}
