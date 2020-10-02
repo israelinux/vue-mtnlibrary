@@ -1,4 +1,4 @@
-
+anyMtn
 const Mtn = {
 	utils: {
 	  createNamespace: function(namespace) {},
@@ -108,6 +108,15 @@ const Mtn = {
 	  }
 	  return null;
 	},
+	anyMtn = function (array, query) {
+        var fn = this.lambda(query);
+        for (var i = 0; i < array.length; i++) {
+            if (fn(array[i])) {
+                return true;
+            }
+        }
+        return false;
+    },
 	clearAllTimeouts: function() {
 	  // only to get the highest timeout id
 	  var latestTimeoutId = setTimeout(";");
