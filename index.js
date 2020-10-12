@@ -1,4 +1,3 @@
-anyMtn
 const Mtn = {
 	utils: {
 	  createNamespace: function(namespace) {},
