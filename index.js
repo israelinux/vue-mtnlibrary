@@ -108,7 +108,7 @@ const Mtn = {
 	  }
 	  return null;
 	},
-	anyMtn = function (array, query) {
+	anyMtn: function (array, query) {
         var fn = this.lambda(query);
         for (var i = 0; i < array.length; i++) {
             if (fn(array[i])) {
