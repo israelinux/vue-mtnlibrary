@@ -67,7 +67,7 @@ matchDate (default is false) if true, will use date to create the id**
 ###### isFunction([Object]) to return if is a function
 >Mtn.isFunction(functionObject); 
 
-**// return if is a function , get from jquery https://github.com/jquery/jquery/blob/master/LICENSE.txt**
+
 
 
 ###### trim([stringObject]) to remove spaces from left and right
@@ -84,17 +84,6 @@ matchDate (default is false) if true, will use date to create the id**
 
 ###### removeAt([Object]) remove from array the exact position informed
 >Mtn.removeAt(array,pos) ; 
-
-
-###### multipleFile([Object]) return true if can use multiple file
->Mtn.support.multipleFile 
-
-
-###### uploadXhr([Object]) return true if can use multiple file and can use XMLHttpRequest.upload
->Mtn.support.uploadXhr 
-
-**//return true if can use multiple file and can use XMLHttpRequest.upload**
-
 
 ###### clearAllTimeouts() stop all events (created using setTimeout or setInterval)
 >Mtn.clearAllTimeouts(); 
