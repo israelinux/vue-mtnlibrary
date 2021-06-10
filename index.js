@@ -28,9 +28,12 @@ const Mtn = {
   isEmpty: function (o) {
     return typeof o !== "string" || o.length === 0;
   },
-  id: function (el, matchDate) {
+  id: function (el, matchDate, sep) {
+	  if (typeof(sep) === 'undefined'){ sep = '-'}
+
     if (this.isNullOrUndefined(el)) el = "id";
-    var replaceMatch = "xxxxxxxx-xxxx-4xxx-yxxx-";
+    var replaceMatch =
+      "xxxxxxxx" + sep + "xxxx" + sep + "4xxx" + sep + "yxxx" + sep;
     if (matchDate) {
       var dateVal = new Date().getTime() + "";
       replaceMatch += dateVal.slice(dateVal.length - 12);
@@ -42,8 +45,9 @@ const Mtn = {
         v = c == "x" ? r : (r & 0x3) | 0x8;
       return v.toString(16);
     });
-    var lel = this.isEmpty(el) ? "" : el + "-";
+    var lel = this.isEmpty(el) ? "" : el + sep;
     lel += id;
+	
     if (this.isNullOrUndefined(document.getElementById(lel))) return lel;
     else return this.id(el);
   },
